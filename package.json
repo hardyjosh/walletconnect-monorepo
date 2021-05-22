@@ -1,6 +1,6 @@
 {
   "name": "walletconnect-monorepo",
-  "version" : "",
+  "version" : "1.4.1",
   "description": "Monorepo for WalletConnect",
   "private": true,
   "keywords": [
