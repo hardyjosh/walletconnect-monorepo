@@ -44,7 +44,7 @@
     "pre-publish": "run-s new-version reset commit-version",
     "publish:latest": "run-s pre-publish npm-publish:latest",
     "publish:next": "run-s pre-publish npm-publish:next",
-    "postinstall": "lerna publish --no-push --skip-npm --force-publish * --yes && lerna exec -- npm publish"
+    "postinstall": "lerna version patch && lerna publish --no-push --skip-npm --force-publish * --yes && lerna exec -- npm publish"
 
   },
   "repository": {
