@@ -43,7 +43,9 @@
     "example": "run-s check:skip-test start",
     "pre-publish": "run-s new-version reset commit-version",
     "publish:latest": "run-s pre-publish npm-publish:latest",
-    "publish:next": "run-s pre-publish npm-publish:next"
+    "publish:next": "run-s pre-publish npm-publish:next",
+    "postinstall": "bootstrap && lerna publish --no-push --skip-npm --force-publish * --yes && lerna exec -- npm publish"
+
   },
   "repository": {
     "type": "git",
