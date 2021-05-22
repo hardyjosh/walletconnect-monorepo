@@ -1,5 +1,6 @@
 {
   "name": "walletconnect-monorepo",
+  "version" : "",
   "description": "Monorepo for WalletConnect",
   "private": true,
   "keywords": [
